@@ -1,0 +1,109 @@
+// Bootstrap
+@import url('bootstrap/dist/css/bootstrap.min.css');
+
+// SASS
+@import './index';
+
+// Slick Slider
+@import url('~slick-carousel/slick/slick.css');
+@import url('~slick-carousel/slick/slick-theme.css');
+
+// Import font from Fontsource
+@import "~@fontsource/raleway/index.css";
+@import "~@fontsource/rufina/index.css";
+@import "~@fontsource/rufina/700.css";
+
+html,
+body {
+	padding: 0;
+	margin: 0;
+	font-family: 'Raleway', sans-serif;
+}
+
+body {
+	overflow: overlay;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.slick-slider {
+	display: flex;
+	align-items: center;
+
+	.slick-arrow {
+		font-size: 1.5em;
+
+		color: $tertiary;
+		opacity: 0.6;
+		cursor: pointer;
+
+		&:hover {
+			opacity: 1;
+		}
+	}
+}
+
+// React-Bootstrap Navbar
+.nav-link {
+	font-size: 0.9rem;
+	font-weight: 600;
+	color: $tertiary !important;
+	transition: 1s;
+
+	&:hover {
+		color: $secondary-light !important;
+	}
+}
+
+.navbar-toggler {
+	border: none;
+
+	&:focus {
+		box-shadow: none;
+	}
+}
+
+.dropdown-menu {
+	background-color: $primary;
+
+	.dropdown-item {
+		color: $tertiary;
+		font-size: 0.9rem;
+		font-weight: 600;
+		transition: 1s;
+
+		&:hover {
+			color: $secondary-light;
+			background-color: $primary;
+		}
+	}
+}
+
+// Custom Scrollbar
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background: rgba(196, 195, 195, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+	background: $secondary-light;
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: $secondary;
+}
+
+@include lg {
+	.slick-slider {
+		.slick-arrow {
+			font-size: 2em;
+			margin: 0.3em;
+		}
+	}
+}

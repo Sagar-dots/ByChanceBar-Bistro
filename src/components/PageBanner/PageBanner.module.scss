@@ -1,0 +1,67 @@
+@import '../../styles/index';
+
+.bannerContainer {
+	background-image: url('/page-banner.jpg');
+	background-size: cover;
+	height: 30em;
+	padding: 12em 1em;
+	text-align: center;
+	position: relative;
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		bottom: 0px;
+		left: 0px;
+		background-color: rgba(0, 0, 0, 0.685);
+	}
+
+	h1 {
+		position: absolute;
+		right: 0;
+		padding: 0 1em;
+		font-size: 2rem;
+		font-family: 'Rufina', serif;
+		color: $tertiary;
+	}
+}
+
+// Breakpoints
+@include md {
+	.bannerContainer {
+		text-align: right;
+		padding: 25vh 2em;
+		background-position: right 50% top 60%;
+
+		h1 {
+			width: 70%;
+		}
+	}
+}
+
+@include lg {
+	.bannerContainer {
+		h1 {
+			padding: 0 2.7em;
+		}
+	}
+}
+
+@include xl {
+	.bannerContainer {
+		h1 {
+			width: 60%;
+			padding: 0 4.5em;
+		}
+	}
+}
+
+@include xxl {
+	.bannerContainer {
+		h1 {
+			padding: 0 6.5em;
+		}
+	}
+}

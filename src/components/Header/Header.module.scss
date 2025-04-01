@@ -1,0 +1,78 @@
+@import '../../styles/index';
+
+.header {
+	background-color: $primary;
+	background-image: url('/header.jpg');
+	background-size: cover;
+	background-position-x: 43vw;
+	background-repeat: no-repeat;
+	height: 40em;
+	position: relative;
+
+	// Header Text
+	.textContainer {
+		padding: 12em 1em;
+		text-align: center;
+
+		.title {
+			font-size: 2.25rem;
+			font-family: 'Rufina', serif;
+			color: $tertiary-med;
+		}
+
+		.subtitle {
+			color: $primary-light;
+			margin: 1em 0 2.5em;
+		}
+
+		.btnTan {
+			visibility: hidden;
+		}
+	}
+}
+
+// Breakpoints
+@include md {
+	.header {
+		.textContainer {
+			width: 50%;
+			text-align: left;
+			padding: 10em 2em;
+		}
+	}
+}
+
+@include lg {
+	.header {
+		background-size: contain;
+		height: 45em;
+
+		.textContainer {
+			text-align: left;
+			padding: 15em 0 10em 6em;
+
+			.title {
+				font-size: 3.5rem;
+			}
+		}
+	}
+}
+
+@include xl {
+	.header {
+		min-height: 100vh;
+
+		.textContainer {
+			padding: 15em 0 10em 10em;
+		}
+	}
+}
+
+@include xxl {
+	.header {
+		.textContainer {
+			width: 40%;
+			padding: 18em 0 10em 15em;
+		}
+	}
+}

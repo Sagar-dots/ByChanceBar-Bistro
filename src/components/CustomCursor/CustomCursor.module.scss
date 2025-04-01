@@ -1,0 +1,68 @@
+@import '../../styles/index';
+
+@mixin cursorFormat {
+  position: fixed;
+  border-radius: 50%;
+  z-index: 9999;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+  pointer-events: none;
+  visibility: hidden;
+  transition: all 0.3s cubic-bezier(0.17, 0.67, 0.21, 0.99);
+}
+
+.customCursor {
+  @include cursorFormat;
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba($secondary-light, 0.8);
+  background: rgba($primary, 0.1);
+  backdrop-filter: blur(1px);
+  mix-blend-mode: exclusion;
+  
+  // Hover effects
+  &.hover {
+    width: 60px;
+    height: 60px;
+    border-width: 2px;
+    border-color: $secondary;
+    background: rgba($primary, 0.2);
+    backdrop-filter: blur(2px);
+  }
+  
+  // Active click effect
+  &.active {
+    transform: scale(0.8);
+    background: rgba($secondary, 0.3);
+  }
+}
+
+.cursorInner {
+  @include cursorFormat;
+  width: 6px;
+  height: 6px;
+  background: $secondary;
+  box-shadow: 0 0 5px rgba($secondary-light, 0.5);
+  
+  // Hover effects
+  &.hover {
+    width: 10px;
+    height: 10px;
+    background: $tertiary;
+    box-shadow: 0 0 10px rgba($secondary-light, 0.8);
+  }
+  
+  // Active click effect
+  &.active {
+    transform: scale(1.5);
+    background: $primary;
+  }
+}
+
+// Hide cursor on touch devices
+@media (hover: none) {
+  .customCursor,
+  .cursorInner {
+    display: none !important;
+  }
+}

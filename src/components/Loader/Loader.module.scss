@@ -1,0 +1,54 @@
+@import '../../styles/index';
+
+// Add shine animation to loader text
+@mixin keyframes($animation-name) {
+	@-webkit-keyframes #{$animation-name} {
+		@content;
+	}
+	@keyframes #{$animation-name} {
+		@content;
+	}
+}
+
+@mixin animation($str) {
+	-webkit-animation: #{$str};
+	animation: #{$str};
+}
+
+@include keyframes(shine) {
+	0% {
+		background-position: 0;
+	}
+	60% {
+		background-position: 20em;
+	}
+}
+
+.loader {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	background-color: $primary;
+
+	h3 {
+		color: $secondary-light;
+		position: relative;
+		font-size: 1em;
+		font-family: 'Raleway', sans-serif;
+		font-weight: bold;
+		padding: 5em;
+
+		letter-spacing: 3px;
+		background: linear-gradient(
+			to right,
+			$secondary-light 0,
+			$tertiary 10%,
+			$secondary-light 20%
+		);
+		background-clip: text;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		@include animation('shine 4s linear infinite');
+	}
+}

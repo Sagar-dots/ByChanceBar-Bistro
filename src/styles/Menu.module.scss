@@ -1,0 +1,124 @@
+@import 'index';
+
+.pageContent {
+	padding: 15vh 1em;
+	justify-content: space-between;
+
+	h2 {
+		font-family: 'Rufina', serif;
+		font-weight: bold;
+		line-height: 1.5em;
+	}
+
+	.divider {
+		color: $secondary-light;
+		opacity: 100%;
+		width: 8em;
+		margin-bottom: 3em;
+	}
+
+	.topContainer,
+	.bottomContainer {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+
+		h4,
+		h5 {
+			font-family: 'Rufina', serif;
+			font-weight: bold;
+			line-height: 1.2em;
+		}
+
+		h5 {
+			font-size: 1.1rem;
+		}
+
+		p {
+			font-size: 0.9rem;
+			color: $primary-light;
+		}
+
+		span {
+			color: $primary;
+			font-weight: bold;
+		}
+
+		.topLContainer,
+		.topRContainer,
+		.bottomLContainer,
+		.bottomRContainer {
+			margin-bottom: 5em;
+
+			.containerTitle {
+				margin-bottom: 3em;
+			}
+		}
+	}
+}
+
+@include md {
+	.pageContent {
+		padding: 25vh 2em;
+
+		h2 {
+			font-size: 2rem;
+		}
+	}
+}
+
+@include lg {
+	.pageContent {
+		padding: 25vh 6em;
+
+		.topContainer,
+		.bottomContainer {
+			flex-direction: row;
+			gap: 3em;
+
+			p {
+				font-size: 1rem;
+			}
+
+			.topLContainer,
+			.topRContainer,
+			.bottomLContainer,
+			.bottomRContainer {
+				width: 50%;
+			}
+		}
+	}
+}
+
+@include xl {
+	.pageContent {
+		padding: 25vh 10em;
+
+		.topContainer,
+		.bottomContainer {
+			gap: 5em;
+		}
+	}
+}
+
+@include xxl {
+	.pageContent {
+		padding: 25vh 15em;
+
+		h2 {
+			font-size: 2.25rem;
+		}
+
+		.topContainer,
+		.bottomContainer {
+			gap: 0;
+
+			.topLContainer,
+			.topRContainer,
+			.bottomLContainer,
+			.bottomRContainer {
+				width: 40%;
+			}
+		}
+	}
+}

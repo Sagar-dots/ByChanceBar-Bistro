@@ -1,0 +1,118 @@
+@import '../../styles/index';
+
+.container {
+	margin: 0;
+	background-color: $secondary;
+	transform: skew(0deg, -10deg);
+	padding: 5em 1em;
+
+	.carouselContainer {
+		transform: skew(0deg, 10deg);
+
+		.content {
+			padding: 0 1.1em;
+			display: flex !important;
+			color: $tertiary;
+			justify-content: space-between;
+
+			.testimonial {
+				margin: auto 0;
+
+				span {
+					display: flex;
+					align-items: center;
+					justify-content: flex-end;
+				}
+
+				h2 {
+					width: 100%;
+				}
+
+				hr {
+					width: 2em;
+					margin-top: 2.25em;
+				}
+
+				p {
+					color: $tertiary;
+					margin-left: 0.5em;
+					margin-bottom: 0;
+					text-transform: uppercase;
+					font-weight: 600;
+					font-size: 0.7em;
+				}
+			}
+
+			.carouselImg {
+				display: none !important;
+			}
+		}
+	}
+}
+
+@include md {
+	.container {
+		padding: 7em 1em;
+	}
+}
+
+@include lg {
+	.container {
+		padding: 0 6em;
+
+		.carouselContainer {
+			.content {
+				padding: 0 1.5em;
+				gap: 3em;
+
+				.testimonial {
+					width: 75%;
+				}
+
+				.carouselImg {
+					display: block !important;
+
+					transition: all 1.2s ease;
+
+					&:hover {
+						filter: brightness(70%);
+						transform: scale(1.05);
+					}
+				}
+			}
+		}
+	}
+}
+
+@include xl {
+	.container {
+		margin: 15vh 0;
+		padding: 0 10em;
+
+		.carouselContainer {
+			.content {
+				padding: 0 2em;
+			}
+		}
+	}
+}
+
+@include xxl {
+	.container {
+		.carouselContainer {
+			.content {
+				.testimonial {
+					width: 45%;
+
+					hr {
+						margin-top: 2.5em;
+					}
+
+					p {
+						font-size: 0.9em;
+					}
+				}
+			}
+		}
+	}
+}

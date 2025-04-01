@@ -1,0 +1,62 @@
+@import '../../styles/index';
+
+.container {
+	.divider {
+		color: $secondary-light;
+		opacity: 1;
+		width: 15em;
+		margin-bottom: 7em;
+	}
+
+	.bookingCards,
+	.bookingCardsLeft {
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: center;
+		justify-content: space-between;
+		margin: 8em 0;
+
+		.bookingDesc {
+			width: 100%;
+		}
+
+		.bookingImg {
+			transition: all 1s ease;
+			cursor: pointer;
+
+			&:hover {
+				filter: brightness(70%);
+				transform: translateY(-2%);
+			}
+		}
+	}
+
+	.bookingCardsLeft {
+		flex-direction: column;
+	}
+}
+
+@include lg {
+	.container {
+		.bookingCards,
+		.bookingCardsLeft {
+			flex-direction: row;
+			gap: 3em;
+
+			.bookingDesc {
+				width: 70%;
+			}
+		}
+	}
+}
+
+@include xl {
+	.container {
+		.bookingCards,
+		.bookingCardsLeft {
+			.bookingDesc {
+				width: 40%;
+			}
+		}
+	}
+}

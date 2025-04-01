@@ -1,0 +1,101 @@
+@import '../../styles/index';
+
+.footerContainer {
+	display: flex;
+	flex-direction: column;
+	background: $primary;
+	color: $tertiary;
+	justify-content: center;
+	padding: 5em 1em 0;
+	gap: 1em;
+
+	.tag {
+		font-family: 'Rufina', serif;
+		h5 {
+			font-weight: bold;
+			color: $secondary-light;
+		}
+		p {
+			font-size: 0.9em;
+		}
+	}
+
+	.sections {
+		display: flex;
+		flex-direction: column;
+
+		p {
+			font-weight: bold;
+			font-size: 0.9em;
+		}
+
+		ul {
+			list-style: none;
+			padding: 0;
+			font-size: 0.8em;
+			color: $primary-light;
+		}
+	}
+
+	.hours {
+		.hoursTitle {
+			font-weight: bold;
+			font-size: 0.9em;
+			margin-bottom: 1.2em;
+		}
+
+		ul {
+			list-style: none;
+			padding: 0;
+			font-size: 0.8em;
+			line-height: 0.2em;
+
+			li {
+				display: flex;
+				gap: 1em;
+				color: $primary-light;
+			}
+		}
+	}
+}
+
+@include md {
+	.footerContainer {
+		flex-direction: row;
+		gap: 2em;
+
+		.sections {
+			flex-direction: row;
+			gap: 1em;
+		}
+
+		.hours {
+			ul {
+				line-height: 1.5em;
+			}
+		}
+	}
+}
+
+@include lg {
+	.footerContainer {
+		gap: 5em;
+		height: 18em;
+
+		.hours {
+			ul {
+				line-height: 0.25em;
+			}
+		}
+	}
+}
+
+@include xl {
+	.footerContainer {
+		gap: 10em;
+
+		.sections {
+			gap: 2.5em;
+		}
+	}
+}
