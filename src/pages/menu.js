@@ -46,61 +46,61 @@ function Menu() {
 					{/* Soup & Salad Container */}
 					<div className={styles.topLContainer}>
 						<div className={styles.containerTitle}>
-							<h4>Soup & Salad</h4>
+							<h2>Main Meals</h2>
+							<br></br>
+							<h4>Lasagne</h4>
 							<p>
-								add protein to any salad: Chicken or Shrimp <span>(4)</span>,
-								Grilled Steak <span>(6)</span>, Wild Alaskan Salmon{' '}
-								<span>(7)</span>
+								Home Made chunky Lasagne with By Chance Signature chips and Salad <span>($20)</span>
 							</p>
 						</div>
 						<div>
-							<h5>House Salad</h5>
+							<h5>Chicken Schnitzel</h5>
 							<p>
-								Organic greens, crumbled gorgonzola, cerignola olives, house
-								dressing <span>(5)</span>
+							Home Made juicy chicken schnitzel{' '}
+							<span>($20)
+							</span>
 							</p>
 							<br />
 
-							<h5>Caesar Salad</h5>
+							<h5>Salt and Pepper Squid</h5>
 							<p>
-								Romaine, anchovy, garlic croutons, parmesan, vinagrette{' '}
-								<span>(6)</span>
+								Tasty salt & pepper squid By Chance Signature chips,salad,tartare & Lemon{' '}
+								<span>($17)</span>
 							</p>
 							<br />
 
-							<h5>Caprese Salad</h5>
+							<h5>By Chance  Burger Pockets</h5>
 							<p>
-								Heirloom tomatoes, fresh mozarella, fresh basil, balsamic
-								vinagrette <span>(7)</span>
+								Home made beef burger patty, wrapped with cheese, salad and aioli, served with By Chance signature chips <span>($15)</span>
 							</p>
 							<br />
 
-							<h5>Minestrone</h5>
+							<h5>Chicken Burger</h5>
 							<p>
-								Orzo pasta, canellini beans, roasted vegetables in tomato broth
-								<span>(5)</span>
+								Burger with chicken schnitzel, cheese, bacon, salad, tomato & BBQ sauce served with By Chance signature chips
+								<span>($17)</span>
 							</p>
 							<br />
 
-							<h5>Frutti di Mare</h5>
+							<h5>Sweet Chilli Tenders</h5>
 							<p>
-								Scallops, prawns, halibut, oregano <span>(8)</span>
+								Sweet Chilli chicken tenders served with By Chance signature chips and Salad <span>(8)</span>
 							</p>
 							<br />
 
-							<h5>Soup of the Day</h5>
-							<p>
-								Ask your server, includes home made breadsticks <span>(5)</span>
-							</p>
+							<h5>Menu subject to change Check for updates</h5>
+							
 							<br />
 						</div>
 					</div>
 
-					{/* Pasta Container */}
+					{/* Snacks Menu Container */}
 					<div className={styles.topRContainer}>
 						<div className={styles.containerTitle}>
-							<h4>Pasta</h4>
-							<p>gluten-free pasta avilable upon request</p>
+							<h2>Snacks</h2>
+							<br></br>
+							<h4>Toasties</h4>
+							<p>Toasted Sandwich with your choice of filling(Ham, Salami, cheese , tomato)</p><span>$4.50</span>
 						</div>
 						<div>
 							<h5>Spaghetti Pomodoro</h5>

@@ -22,7 +22,7 @@ function PageBanner() {
 	return (
 		<div className={styles.bannerContainer}>
 			<h1 ref={(e) => (content = e)}>
-				By Chance Bar and Bistro, Your home away from home.
+				By Chance Bar and Bistro,Your home away from home.
 			</h1>
 		</div>
 	);
