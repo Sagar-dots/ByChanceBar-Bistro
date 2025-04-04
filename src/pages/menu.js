@@ -84,7 +84,7 @@ function Menu() {
 
 							<h5>Sweet Chilli Tenders</h5>
 							<p>
-								Sweet Chilli chicken tenders served with By Chance signature chips and Salad <span>(8)</span>
+								Sweet Chilli chicken tenders served with By Chance signature chips and Salad <span>($15)</span>
 							</p>
 							<br />
 
@@ -103,50 +103,44 @@ function Menu() {
 							<p>Toasted Sandwich with your choice of filling(Ham, Salami, cheese , tomato)</p><span>$4.50</span>
 						</div>
 						<div>
-							<h5>Spaghetti Pomodoro</h5>
+							<h5>Homemade Pies</h5>
 							<p>
-								Tomatoes, fresh basil, garlic, olive oil <span>(10)</span>
+								Various flavours, on display daily <span>($6)</span>
 							</p>
 							<br />
 
-							<h5>Orecchiette Pasta</h5>
+							<h5>Bowl of chipss</h5>
 							<p>
-								Grilled sausage, pecorino romano, garlic, white wine{' '}
-								<span>(12)</span>
+								By Chance signature chips and sauce{' '}
+								<span>($7)</span>
 							</p>
 							<br />
 
-							<h5>Pappardelle con Coniglio</h5>
+							<h5>Bowl of Wedges</h5>
 							<p>
-								Braised rabbit, carrot, celery, onion, garlic, white wine{' '}
-								<span>(15)</span>
+								Pub Style wedges wih sweet chilli and sour cream{' '}
+								<span>($10)</span>
 							</p>
 							<br />
 
-							<h5>Risotto Gamberi</h5>
+							<h5>Chicken Nuggets</h5>
 							<p>
-								Arborio rice, shrimp, asparagus, creamy tomato sauce{' '}
-								<span>(12)</span>
+								10 Chicken nuggets with By Chance signature chips & sauce {'  '}
+								<span>($15)</span>
 							</p>
 							<br />
-
-							<h5>Gnocchi</h5>
-							<p>
-								Potato pasta, sage, browned butter, fortina, gorgonzola{' '}
-								<span>(10)</span>
-							</p>
-							<br />
-
-							<h5>Spaghetti Puttanesca</h5>
-							<p>
-								Tomatoes, green olives, capers, chili, oregano <span>(11)</span>
-							</p>
+							<div>
+							<h5>Add Gravy   <span>$2</span></h5>{' '}
+							<br></br>
+							<h5>Add Chips   <span>$5</span></h5>{' '}
+							</div>
+							
 							<br />
 						</div>
 					</div>
 				</div>
 
-				{/* Bottom Menu Container */}
+				{/* Kids Menu Container */}
 				<div className={styles.bottomContainer}>
 					{/* Panini Container */}
 					<div className={styles.bottomLContainer}>
